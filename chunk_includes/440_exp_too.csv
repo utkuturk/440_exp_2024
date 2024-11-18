@@ -1,0 +1,97 @@
+id,condition1,condition2,sentence,type
+1,too,trivial,No head injury is too trivial to ignore,exp-too
+1,enough,trivial,No head injury is trivial enough to ignore,exp-too
+1,sufficiently,trivial,No head injury is sufficiently trivial to ignore,exp-too
+1,too,dangerous,No head injury is too dangerous to ignore,exp-too
+1,enough,dangerous,No head injury is dangerous enough to ignore,exp-too
+1,sufficiently,dangerous,No head injury is sufficiently dangerous to ignore,exp-too
+2,too,insignificant,No memento is too insignificant to discard,exp-too
+2,enough,insignificant,No memento is insignificant enough to discard,exp-too
+2,sufficiently,insignificant,No memento is sufficiently insignificant to discard,exp-too
+2,too,precious,No memento is too precious to discard,exp-too
+2,enough,precious,No memento is precious enough to discard,exp-too
+2,sufficiently,precious,No memento is sufficiently precious to discard,exp-too
+3,too,stupid,No advice is too stupid to trust,exp-too
+3,enough,stupid,No advice is stupid enough to trust,exp-too
+3,sufficiently,stupid,No advice is sufficiently stupid to trust,exp-too
+3,too,sound,No advice is too sound to trust,exp-too
+3,enough,sound,No advice is sound enough to trust,exp-too
+3,sufficiently,sound,No advice is sufficiently sound to trust,exp-too
+4,too,wide,No river is too wide to cross,exp-too
+4,enough,wide,No river is wide enough to cross,exp-too
+4,sufficiently,wide,No river is sufficiently wide to cross,exp-too
+4,too,narrow,No river is too narrow to cross,exp-too
+4,enough,narrow,No river is narrow enough to cross,exp-too
+4,sufficiently,narrow,No river is sufficiently narrow to cross,exp-too
+5,too,silly,"In college, no club is too silly to join",exp-too
+5,enough,silly,"In college, no club is silly enough to join",exp-too
+5,sufficiently,silly,"In college, no club is sufficiently silly to join",exp-too
+5,too,serious,"In college, no club is too serious to join",exp-too
+5,enough,serious,"In college, no club is serious enough to join",exp-too
+5,sufficiently,serious,"In college, no club is sufficiently serious to join",exp-too
+6,too,small,"For Alexander the Great, no kingdom was too small to conquer",exp-too
+6,enough,small,"For Alexander the Great, no kingdom was small enough to conquer",exp-too
+6,sufficiently,small,"For Alexander the Great, no kingdom was sufficiently small to conquer",exp-too
+6,too,big,"For Alexander the Great, no kingdom was too big to conquer",exp-too
+6,enough,big,"For Alexander the Great, no kingdom was big enough to conquer",exp-too
+6,sufficiently,big,"For Alexander the Great, no kingdom was sufficiently big to conquer",exp-too
+7,too,cold,"In the summer, no pool is too cold to swim in",exp-too
+7,enough,cold,"In the summer, no pool is cold enough to swim in",exp-too
+7,sufficiently,cold,"In the summer, no pool is sufficiently cold to swim in",exp-too
+7,too,hot,"In the summer, no pool is too hot to swim in",exp-too
+7,enough,hot,"In the summer, no pool is hot enough to swim in",exp-too
+7,sufficiently,hot,"In the summer, no pool is sufficiently hot to swim in",exp-too
+8,too,sweet,No apple is too sweet to eat,exp-too
+8,enough,sweet,No apple is sweet enough to eat,exp-too
+8,sufficiently,sweet,No apple is sufficiently sweet to eat,exp-too
+8,too,sour,No apple is too sour to eat,exp-too
+8,enough,sour,No apple is sour enough to eat,exp-too
+8,sufficiently,sour,No apple is sufficiently sour to eat,exp-too
+9,too,easy,No task is easy too to do,exp-too
+9,enough,easy,No task is easy enough to do,exp-too
+9,sufficiently,easy,No task is sufficiently easy to do,exp-too
+9,too,hard,No task is too hard to do,exp-too
+9,enough,hard,No task is hard enough to do,exp-too
+9,sufficiently,hard,No task is sufficiently hard to do,exp-too
+10,too,dull,"In the kitchen, no knife is too dull to use",exp-too
+10,enough,dull,"In the kitchen, no knife is dull enough",exp-too
+10,sufficiently,dull,"In the kitchen, no knife is sufficiently dull to use",exp-too
+10,too,sharp,"In the kitchen, no knife is too sharp to use",exp-too
+10,enough,sharp,"In the kitchen, no knife is sharp enough",exp-too
+10,sufficiently,sharp,"In the kitchen, no knife is sufficiently sharp to use",exp-too
+11,too,polished,No draft is too polished to proofread,exp-too
+11,enough,polished,No draft is polished enough to proofread,exp-too
+11,sufficiently,polished,No draft is sufficiently polished to proofread,exp-too
+11,too,sloppy,No draft is too sloppy to proofread,exp-too
+11,enough,sloppy,No draft is sloppy enough to proofread,exp-too
+11,sufficiently,sloppy,No draft is sufficiently sloppy to proofread,exp-too
+12,too,full,"When signing a yearbook, no page is too full to write on",exp-too
+12,enough,full,"When signing a yearbook, no page is full enough to write on",exp-too
+12,sufficiently,full,"When signing a yearbook, no page is sufficiently full to write on",exp-too
+12,too,empty,"When signing a yearbook, no page is too empty to write on",exp-too
+12,enough,empty,"When signing a yearbook, no page is empty enough to write on",exp-too
+12,sufficiently,empty,"When signing a yearbook, no page is sufficiently empty  to write on",exp-too
+13,too,expensive,No bagel is too expensive to buy,exp-too
+13,enough,expensive,No bagel is expensive enough to buy,exp-too
+13,sufficiently,expensive,No bagel is sufficiently expensive to buy,exp-too
+13,too,cheap,No bagel is too cheap to buy,exp-too
+13,enough,cheap,No bagel is cheap enough to buy,exp-too
+13,sufficiently,cheap,No bagel is sufficiently cheap to buy,exp-too
+14,too,dark,No alley is too dark to walk down,exp-too
+14,enough,dark,No alley is dark enough to walk down,exp-too
+14,sufficiently,dark,No alley is sufficiently dark to walk down,exp-too
+14,too,light,No alley is too light to walk down,exp-too
+14,enough,light,No alley is light enough to walk down,exp-too
+14,sufficiently,light,No alley is sufficiently light to walk down,exp-too
+15,too,tall,No mountain is too tall to climb,exp-too
+15,enough,tall,No mountain tall enough to climb,exp-too
+15,sufficiently,tall,No mountain is sufficiently tall to climb,exp-too
+15,too,short,No mountain is too short to climb,exp-too
+15,enough,short,No mountain short enough to climb,exp-too
+15,sufficiently,short,No mountain is sufficiently short to climb,exp-too
+16,too,deep,No river is too deep to cross,exp-too
+16,enough,deep,No river is deep enough to cross,exp-too
+16,sufficiently,deep,No river is sufficiently deep to cross,exp-too
+16,too,shallow,No river is too shallow to cross,exp-too
+16,enough,shallow,No river is shallow enough to cross,exp-too
+16,sufficiently,shallow,No river is sufficiently shallow to cross,exp-too

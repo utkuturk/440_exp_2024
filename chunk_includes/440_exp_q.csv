@@ -1,0 +1,65 @@
+id,writer,condition1,sentence,condition2,type
+1,As a group,N,"When it comes to Milo's friends, no event is too inconvenient to skip.",Y,exp-q
+1,As a group,Y,"when is comes to Milo's friends, all events are too inconvenient to skip.",Y,exp-q
+1,As a group,N,No event is too inconvenient to skip,N,exp-q
+1,As a group,Y,"All events are too inconvenient to skip ",N,exp-q
+2,As a group,N,Harry believes that no advice is too stupid to doubt.,Y,exp-q
+2,As a group,Y,Harry believes that all advice is too stupid to doubt.,Y,exp-q
+2,As a group,N,No advice is too stupid to doubt.,N,exp-q
+2,As a group,Y,All advice is too stupid to doubt.,N,exp-q
+3,As a group,N,"In Kelly's opinion, no player is too slow to lose.",Y,exp-q
+3,As a group,Y,"In Kelly's opinion, all players is too slow to lose.",Y,exp-q
+3,As a group,N,No player is too slow to lose,N,exp-q
+3,As a group,Y,All players are too slow to lose,N,exp-q
+4,As a group,N,"In Margarie's kitchen, no spoon is too dirty to use.",Y,exp-q
+4,As a group,Y,"In Margarie's kitchen, all spoons are too dirty to use.",Y,exp-q
+4,As a group,N,No spoon is too dirty to use,N,exp-q
+4,As a group,Y,All spoons are too dirty to use,N,exp-q
+5,As a group,N,"According to my mother, no stranger is too kind to trust.",Y,exp-q
+5,As a group,Y,"According to my mother, all strangers are too kind to trust.",Y,exp-q
+5,As a group,N,No stranger is too kind to trust.,N,exp-q
+5,As a group,Y,"All strangers are too kind to trust. ",N,exp-q
+6,As a group,N,"According to the judge, no social program is too wasteful to oppose.",Y,exp-q
+6,As a group,Y,"According to the judge, all social programs are too wasteful to oppose.",Y,exp-q
+6,As a group,N,No social program is too wasteful to oppose.,N,exp-q
+6,As a group,Y,"All social programs are too wasteful to oppose. ",N,exp-q
+7,As a group,N,"For Joe, no friend is too easy to forget.",Y,exp-q
+7,As a group,Y,"For Joe, all friends are too eays to forget.",Y,exp-q
+7,As a group,N,"No friends is too easy to forget. ",N,exp-q
+7,As a group,Y,"All friends are too easy to forget. ",N,exp-q
+8,As a group,N,"When Ryan inspects the carpets, no stain is too subtle to miss.",Y,exp-q
+8,As a group,Y,"When Ryan inspects the carpets, all stains are too subtle to miss.",Y,exp-q
+8,As a group,N,No stain is too subtle to miss.,N,exp-q
+8,As a group,Y,All stains are too subtle to miss.,N,exp-q
+9,As a group,N,"For someone like Josh, no fish is too small to catch.",Y,exp-q
+9,As a group,Y,"For someone like Josh, every fish is too small to catch.",Y,exp-q
+9,As a group,N,No fish is too small to catch.,N,exp-q
+9,As a group,Y,Every fish is too small to catch.,N,exp-q
+10,As a group,N,"When looking at data, no anomaly is too significant to overlook.",Y,exp-q
+10,As a group,Y,"When looking at data, all anomalies are too significant to overlook.",Y,exp-q
+10,As a group,N,No anomaly is too significant to overlook.,N,exp-q
+10,As a group,Y,"All anomalies are too significant to overlook. ",N,exp-q
+11,As a group,N,"When it is cold out, no child is too small to freeze.",Y,exp-q
+11,As a group,Y,"When it is cold out, every child is too small to freeze.",Y,exp-q
+11,As a group,N,No child is too small to freeze.,N,exp-q
+11,As a group,Y,Every child is too small to freeze.,N,exp-q
+12,,N,"For the editor, no mistake is to small to ignore",Y,exp-q
+12,,Y,"For the editor, all mistakes are too small to ignore",Y,exp-q
+12,,N,No mistake is too small to ignore,N,exp-q
+12,,Y,All mistakes are too small to ignore,N,exp-q
+13,,N,"In the precinct, no criminal is too sneaky to be caught.",Y,exp-q
+13,,Y,"In the precinct, all criminals are too sneaky to be caught.",Y,exp-q
+13,,N,No criminal is too sneaky to be caught.,N,exp-q
+13,,Y,All criminals are too sneaky to be caught.,N,exp-q
+14,,N,"When eating breakfast, no protein is too nutritious to enjoy.",Y,exp-q
+14,,Y,"When eating breakfast, all proteins are too nutritious to enjoy.",Y,exp-q
+14,,N,No protein is too nutritious to enjoy.,N,exp-q
+14,,Y,All proteins are too nutritious to enjoy.,N,exp-q
+15,,N,"According to Macy, no purchase is too frivolous to make.",Y,exp-q
+15,,Y,"According to Macy, all purchases are too frivolous to make.",Y,exp-q
+15,,N,No purchase is too frivolous to make.,N,exp-q
+15,,Y,All purchases are too frivolous to make.,N,exp-q
+16,,N,"In Boise, no potato is too big to harvest.",Y,exp-q
+16,,Y,"In Boise, all potatoes are too big to harvest.",Y,exp-q
+16,,N,No potato is too big to harvest.,N,exp-q
+16,,Y,All potatoes are too big to harvest.,N,exp-q
