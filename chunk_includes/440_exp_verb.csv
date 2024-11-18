@@ -1,65 +1,65 @@
-id,writer,condition1,sentence,condition2,type
-1,Preethi Pai,"pos adj, pos morph",No authority is too strict to obey.,null,exp-verb
-1,Preethi Pai,"pos adj, neg morph",No authority is too strict to disobey.,null,exp-verb
-1,Preethi Pai,"neg adj, pos morph",No authority is too lenient to obey.,null,exp-verb
-1,Preethi Pai,"neg adj, neg morph",No authority is too lenient to disobey.,null,exp-verb
-2,Preethi Pai,"pos adj, pos morph",No opinion is too smart to respect.,null,exp-verb
-2,Preethi Pai,"pos adj, neg morph",No opinion is too smart to disrespect,null,exp-verb
-2,Preethi Pai,"neg adj, pos morph",No opinion is too stupid to respect,null,exp-verb
-2,Preethi Pai,"neg adj, neg morph",No opinion is too stupid to disrespect.,null,exp-verb
-3,as a group,"pos adj, pos morph",No head injury is too dangerous to regard,null,exp-verb
-3,as a group,"pos adj, neg morph",No head injury is too dangerous to disregard,null,exp-verb
-3,as a group,"neg adj, pos morph",No head injury is too innocuous to regard,null,exp-verb
-3,as a group,"neg adj, neg morph",No head injury is too innocuous to disregard,null,exp-verb
-4,as a group,"pos adj, pos morph",No drug is too dangerous to allow,null,exp-verb
-4,as a group,"pos adj, neg morph",No drug is too dangerous to disallow,null,exp-verb
-4,as a group,"neg adj, pos morph",No drug is too safe to allow,null,exp-verb
-4,as a group,"neg adj, neg morph",No drug is too safe to disallow,null,exp-verb
-5,Audrey Wiswakarma,pos adj. pos morph,No story is too wild to believe,null,exp-verb
-5,Audrey Wiswakarma,pos adj. neg morph,No story is too wild to disbelieve,null,exp-verb
-5,Audrey Wiswakarma,neg adj. pos morph,No story is too probable to believe,null,exp-verb
-5,Audrey Wiswakarma,neg adj. neg morph,No story is too probable to disbelieve,null,exp-verb
-6,Audrey Wiswakarma,pos adj. pos morph,No rumor is too strange to claim,null,exp-verb
-6,Audrey Wiswakarma,pos adj. neg morph,No rumor is too accurate to claim,null,exp-verb
-6,Audrey Wiswakarma,neg adj. pos morph,No rumor is too strange to disclaim,null,exp-verb
-6,Audrey Wiswakarma,neg adj. neg morph,No rumor is too accurate to disclaim,null,exp-verb
-7,group,"pos adj, pos morph",No treat is too sweet to like.,null,exp-verb
-7,group,"pos adj, neg morph",No treat is too sweet to dislike.,null,exp-verb
-7,group,"neg adj, pos morph",No treat is too bitter to like.,null,exp-verb
-7,group,"neg adj, neg morph",No treat is too bitter to dislike.,null,exp-verb
-8,group,"pos adj, pos morph",No theory is too credible to prove.,null,exp-verb
-8,group,"pos adj, neg morph",No theory is too credible to disprove.,null,exp-verb
-8,group,"neg adj, pos morph",No theory is too far-fetched to prove.,null,exp-verb
-8,group,"neg adj, neg morph",No theory is too far-fetched to disprove.,null,exp-verb
-9,group,"pos adj, pos morph",No club is too encouraging to affiliate.,null,exp-verb
-9,group,"pos adj, neg morph",No club is too discouraging to affiliate.,null,exp-verb
-9,group,"neg adj, pos morph",No club is too encouraging to disafilliate.,null,exp-verb
-9,group,"neg adj, neg morph",No club is too discouraging to disaffiliate.,null,exp-verb
-10,group,"pos adj, pos morph",No virus is too benign to infect.,null,exp-verb
-10,group,"pos adj, neg morph",No virus is too pervasive to infect.,null,exp-verb
-10,group,"neg adj, pos morph",No virus is too benign to disinfect.,null,exp-verb
-10,group,"neg adj, neg morph",No virus is too pervasive to disinfect.,null,exp-verb
-11,group,"pos adj, pos morph",No speech is too inspiring to empower.,null,exp-verb
-11,group,"pos adj, neg morph",No speech is too boring to empower.,null,exp-verb
-11,group,"neg adj, pos morph",No speech is too inspiring to disempower.,null,exp-verb
-11,group,"neg adj, neg morph",No speech is too boring to disempower.,null,exp-verb
-12,group,"pos adj, pos morph",No battery is too full to charge.,null,exp-verb
-12,group,"pos adj, neg morph",No battery is too empty to charge.,null,exp-verb
-12,group,"neg adj, pos morph",No battery is too full to discharge.,null,exp-verb
-12,group,"neg adj, neg morph",No battery is too full to discharge.,null,exp-verb
-13,group,"pos adj, pos morph",No person is too smart to agree with.,null,exp-verb
-13,group,"pos adj, neg morph",No person is too stupid to agree with.,null,exp-verb
-13,group,"neg adj, pos morph",No person is too smart to disagree with.,null,exp-verb
-13,group,"neg adj, neg morph",No person is too stupid to disagree with.,null,exp-verb
-14,group,"pos adj, pos morph",No entry is too strong to qualify.,null,exp-verb
-14,group,"pos adj, neg morph",No entry is too weak to qualify.,null,exp-verb
-14,group,"neg adj, pos morph",No entry is too strong to disqualify.,null,exp-verb
-14,group,"neg adj, neg morph",No entry is too weak to disqualify.,null,exp-verb
-15,group,"pos adj, pos morph",No security system is too complex to arm.,null,exp-verb
-15,group,"pos adj, neg morph",No security system is too simple to arm.,null,exp-verb
-15,group,"neg adj, pos morph",No security system is too complex to disarm.,null,exp-verb
-15,group,"neg adj, neg morph",No security system is too simple to disarm.,null,exp-verb
-16,group,"pos adj, pos morph",No project is too promising to continue.,null,exp-verb
-16,group,"pos adj, neg morph",No project is too worthless to continue.,null,exp-verb
-16,group,"neg adj, pos morph",No project is too promising to discontinue.,null,exp-verb
-16,group,"neg adj, neg morph",No project is too worthless to discontinue.,,exp-verb
+id,writer,condition1,sentence,condition2,Group,type
+1,Preethi Pai,"pos adj, pos morph",No authority is too strict to obey.,null,A,exp-verb
+1,Preethi Pai,"pos adj, neg morph",No authority is too strict to disobey.,null,B,exp-verb
+1,Preethi Pai,"neg adj, pos morph",No authority is too lenient to obey.,null,C,exp-verb
+1,Preethi Pai,"neg adj, neg morph",No authority is too lenient to disobey.,null,D,exp-verb
+2,Preethi Pai,"pos adj, pos morph",No opinion is too smart to respect.,null,B,exp-verb
+2,Preethi Pai,"pos adj, neg morph",No opinion is too smart to disrespect,null,C,exp-verb
+2,Preethi Pai,"neg adj, pos morph",No opinion is too stupid to respect,null,D,exp-verb
+2,Preethi Pai,"neg adj, neg morph",No opinion is too stupid to disrespect.,null,A,exp-verb
+3,as a group,"pos adj, pos morph",No head injury is too dangerous to regard,null,C,exp-verb
+3,as a group,"pos adj, neg morph",No head injury is too dangerous to disregard,null,D,exp-verb
+3,as a group,"neg adj, pos morph",No head injury is too innocuous to regard,null,A,exp-verb
+3,as a group,"neg adj, neg morph",No head injury is too innocuous to disregard,null,B,exp-verb
+4,as a group,"pos adj, pos morph",No drug is too dangerous to allow,null,D,exp-verb
+4,as a group,"pos adj, neg morph",No drug is too dangerous to disallow,null,A,exp-verb
+4,as a group,"neg adj, pos morph",No drug is too safe to allow,null,B,exp-verb
+4,as a group,"neg adj, neg morph",No drug is too safe to disallow,null,C,exp-verb
+5,Audrey Wiswakarma,pos adj. pos morph,No story is too wild to believe,null,A,exp-verb
+5,Audrey Wiswakarma,pos adj. neg morph,No story is too wild to disbelieve,null,B,exp-verb
+5,Audrey Wiswakarma,neg adj. pos morph,No story is too probable to believe,null,C,exp-verb
+5,Audrey Wiswakarma,neg adj. neg morph,No story is too probable to disbelieve,null,D,exp-verb
+6,Audrey Wiswakarma,pos adj. pos morph,No rumor is too strange to claim,null,B,exp-verb
+6,Audrey Wiswakarma,pos adj. neg morph,No rumor is too accurate to claim,null,C,exp-verb
+6,Audrey Wiswakarma,neg adj. pos morph,No rumor is too strange to disclaim,null,D,exp-verb
+6,Audrey Wiswakarma,neg adj. neg morph,No rumor is too accurate to disclaim,null,A,exp-verb
+7,group,"pos adj, pos morph",No treat is too sweet to like.,null,C,exp-verb
+7,group,"pos adj, neg morph",No treat is too sweet to dislike.,null,D,exp-verb
+7,group,"neg adj, pos morph",No treat is too bitter to like.,null,A,exp-verb
+7,group,"neg adj, neg morph",No treat is too bitter to dislike.,null,B,exp-verb
+8,group,"pos adj, pos morph",No theory is too credible to prove.,null,D,exp-verb
+8,group,"pos adj, neg morph",No theory is too credible to disprove.,null,A,exp-verb
+8,group,"neg adj, pos morph",No theory is too far-fetched to prove.,null,B,exp-verb
+8,group,"neg adj, neg morph",No theory is too far-fetched to disprove.,null,C,exp-verb
+9,group,"pos adj, pos morph",No club is too encouraging to affiliate.,null,A,exp-verb
+9,group,"pos adj, neg morph",No club is too discouraging to affiliate.,null,B,exp-verb
+9,group,"neg adj, pos morph",No club is too encouraging to disafilliate.,null,C,exp-verb
+9,group,"neg adj, neg morph",No club is too discouraging to disaffiliate.,null,D,exp-verb
+10,group,"pos adj, pos morph",No virus is too benign to infect.,null,B,exp-verb
+10,group,"pos adj, neg morph",No virus is too pervasive to infect.,null,C,exp-verb
+10,group,"neg adj, pos morph",No virus is too benign to disinfect.,null,D,exp-verb
+10,group,"neg adj, neg morph",No virus is too pervasive to disinfect.,null,A,exp-verb
+11,group,"pos adj, pos morph",No speech is too inspiring to empower.,null,C,exp-verb
+11,group,"pos adj, neg morph",No speech is too boring to empower.,null,D,exp-verb
+11,group,"neg adj, pos morph",No speech is too inspiring to disempower.,null,A,exp-verb
+11,group,"neg adj, neg morph",No speech is too boring to disempower.,null,B,exp-verb
+12,group,"pos adj, pos morph",No battery is too full to charge.,null,D,exp-verb
+12,group,"pos adj, neg morph",No battery is too empty to charge.,null,A,exp-verb
+12,group,"neg adj, pos morph",No battery is too full to discharge.,null,B,exp-verb
+12,group,"neg adj, neg morph",No battery is too full to discharge.,null,C,exp-verb
+13,group,"pos adj, pos morph",No person is too smart to agree with.,null,A,exp-verb
+13,group,"pos adj, neg morph",No person is too stupid to agree with.,null,B,exp-verb
+13,group,"neg adj, pos morph",No person is too smart to disagree with.,null,C,exp-verb
+13,group,"neg adj, neg morph",No person is too stupid to disagree with.,null,D,exp-verb
+14,group,"pos adj, pos morph",No entry is too strong to qualify.,null,B,exp-verb
+14,group,"pos adj, neg morph",No entry is too weak to qualify.,null,C,exp-verb
+14,group,"neg adj, pos morph",No entry is too strong to disqualify.,null,D,exp-verb
+14,group,"neg adj, neg morph",No entry is too weak to disqualify.,null,A,exp-verb
+15,group,"pos adj, pos morph",No security system is too complex to arm.,null,C,exp-verb
+15,group,"pos adj, neg morph",No security system is too simple to arm.,null,D,exp-verb
+15,group,"neg adj, pos morph",No security system is too complex to disarm.,null,A,exp-verb
+15,group,"neg adj, neg morph",No security system is too simple to disarm.,null,B,exp-verb
+16,group,"pos adj, pos morph",No project is too promising to continue.,null,D,exp-verb
+16,group,"pos adj, neg morph",No project is too worthless to continue.,null,A,exp-verb
+16,group,"neg adj, pos morph",No project is too promising to discontinue.,null,B,exp-verb
+16,group,"neg adj, neg morph",No project is too worthless to discontinue.,,C,exp-verb
