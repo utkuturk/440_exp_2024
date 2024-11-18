@@ -1,2 +1,2 @@
-id,sentence,c2_type,c1_type,v2,comma,type,condition,grammaticality,person
+id,sentence,condition2,condition1,v2,comma,type,condition,grammaticality,writer
 505,Lucy bought this book as a gift to her grandpa who will borrow the book yesterday.,practice,practice,practice,practice,practice,practice,0,Utku

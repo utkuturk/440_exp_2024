@@ -1,49 +1,49 @@
-id,writer,condition1,sentence,type
-1,,Positive,"In Maria's class, no test is too easy to fail",exp-adj
-1,,Neutral,"In Maria's class, no test is too cumulative to fail",exp-adj
-1,,Negative,In Maria's class no test is too difficult to fail,exp-adj
-2,,Positive,In Laura's opinion no relationship is too positive to fail,exp-adj
-2,,Neutral,"In Laura's opinion, no relationship is too stable to fail",exp-adj
-2,,Negative,"In Laura's opinion, no relationship  is too volatile to fail",exp-adj
-3,Jaclyn Desautels,Positive,"According to Mark, no drug is too safe to ban",exp-adj
-3,Jaclyn Desautels,Neutral,"According to Mark, no drug is too innocuous to ban",exp-adj
-3,Jaclyn Desautels,Negative,"According to Mark, no drug is too dangerous to ban",exp-adj
-4,Jaclyn Desautels,Positive,"When Jack inspects the uniforms, no stain is too subtle to miss",exp-adj
-4,Jaclyn Desautels,Neutral,"When Jack inspects the uniforms, no stain is too circular to miss ",exp-adj
-4,Jaclyn Desautels,Negative,"When Jack inspects the uniforms, no stain is too obvious to miss. ",exp-adj
-5,Jaclyn Desautels,Positive,"Considering John's finances, no salary offer is too high to reject",exp-adj
-5,Jaclyn Desautels,Neutral,"Considering John's finances, no salary offer is too neutral to reject",exp-adj
-5,Jaclyn Desautels,Negative,"Considering John's finances, no salary offer is too low to reject ",exp-adj
-6,,Positive,"Given Lily's relationship with her mother, no topic is too pleasant to avoid ",exp-adj
-6,,Neutral,"Given Lily's relationship with her mother, no topic is too current to avoid",exp-adj
-6,,Negative,"Given Lily's relationship with her mother, no topic too contentious  to avoid",exp-adj
-7,Elijah Doyle,Positive,"For someone like Alex, no memory is too pleasant to forget",exp-adj
-7,Elijah Doyle,Neutral,"For someone like Alex, no memory is too average to forget",exp-adj
-7,Elijah Doyle,Negative,"For someone like Alex, no memory is too embarrassing to forget",exp-adj
-8,Elijah Doyle,Positive,"With Liz's eating habits, no craving is too strong to resist",exp-adj
-8,Elijah Doyle,Neutral,"With Liz's eating habits, no craving is too normal to resist",exp-adj
-8,Elijah Doyle,Negative,"With Liz's eating habits, no craving is too weak to resist",exp-adj
-9,"Nuria ",Positive,No rumor is too credible to claim,exp-adj
-9,"Nuria ","Neutral ",No rumor is too impartial to claim,exp-adj
-9,"Nuria ",Negative,No rumor is too absurd to claim,exp-adj
-10,Jaclyn Desautels,Positive,"According to the politician, no social program is too efficient to oppose.",exp-adj
-10,Jaclyn Desautels,Neutral,"According to the politician, no social program is too public. ",exp-adj
-10,Jaclyn Desautels,"Negative ","According to the politician, no social program is too wasteful to oppose.",exp-adj
-11,Jaclyn Desautels,Positive,"In Sarah's opinion, some players are too fast to lose.",exp-adj
-11,Jaclyn Desautels,Neutral,"In Sarah's opinion, some players are too midwestern to lose. ",exp-adj
-11,Jaclyn Desautels,"Negative ","In Sarah's opinion, some players are too slow to lose.",exp-adj
-12,Jaclyn Desautels,Postive,"When Lulu is talking, some sentences are too simple to misunderstand.",exp-adj
-12,Jaclyn Desautels,Neutral,"When Lulu is talking, some sentences are too neutral to misunderstand. ",exp-adj
-12,Jaclyn Desautels,Negative,"When Lulu is talking, some sentences are too complex to misunderstand.",exp-adj
-13,Elijah Doyle,Postive,"For Alexander the great, no kingdom was too rich to conquer ",exp-adj
-13,Elijah Doyle,"Neutral ","For Alexander the great, no kingdom was too rich to conquer ",exp-adj
-13,Elijah Doyle,Negative,"For Alexander the great, no kingodm was too poor to conquer",exp-adj
-14,Elijah Doyle,Positive,"According to grandma, no polition is too genuine to dislike",exp-adj
-14,Elijah Doyle,Neutral,"According to grandma, no politition is too moderate to dislike",exp-adj
-14,Elijah Doyle,Negative,"According to grandma, no politition is too radical to dislike",exp-adj
-15,Elijah Doyle,Positive,"For Frank, no advice is too helpful to doubt",exp-adj
-15,Elijah Doyle,Neutral,"For Frank, no advice is too standard to doubt",exp-adj
-15,Elijah Doyle,Negative,"For Frank, no advice is too stupid to doubt",exp-adj
-16,Elijah Doyle,Positive,"When Sarah is talking, no sentence is too straightforward to misunderstand",exp-adj
-16,Elijah Doyle,Neutral,"When Sarah is talking, no sentence is too typical to misunderstand",exp-adj
-16,Elijah Doyle,Negative,"When Sarah is talking, no sentnece is too complicated to misunderstand",exp-adj
+id,writer,condition1,sentence,condition2,type
+1,,Positive,"In Maria's class, no test is too easy to fail",null,exp-adj
+1,,Neutral,"In Maria's class, no test is too cumulative to fail",null,exp-adj
+1,,Negative,In Maria's class no test is too difficult to fail,null,exp-adj
+2,,Positive,In Laura's opinion no relationship is too positive to fail,null,exp-adj
+2,,Neutral,"In Laura's opinion, no relationship is too stable to fail",null,exp-adj
+2,,Negative,"In Laura's opinion, no relationship  is too volatile to fail",null,exp-adj
+3,Jaclyn Desautels,Positive,"According to Mark, no drug is too safe to ban",null,exp-adj
+3,Jaclyn Desautels,Neutral,"According to Mark, no drug is too innocuous to ban",null,exp-adj
+3,Jaclyn Desautels,Negative,"According to Mark, no drug is too dangerous to ban",null,exp-adj
+4,Jaclyn Desautels,Positive,"When Jack inspects the uniforms, no stain is too subtle to miss",null,exp-adj
+4,Jaclyn Desautels,Neutral,"When Jack inspects the uniforms, no stain is too circular to miss ",null,exp-adj
+4,Jaclyn Desautels,Negative,"When Jack inspects the uniforms, no stain is too obvious to miss. ",null,exp-adj
+5,Jaclyn Desautels,Positive,"Considering John's finances, no salary offer is too high to reject",null,exp-adj
+5,Jaclyn Desautels,Neutral,"Considering John's finances, no salary offer is too neutral to reject",null,exp-adj
+5,Jaclyn Desautels,Negative,"Considering John's finances, no salary offer is too low to reject ",null,exp-adj
+6,,Positive,"Given Lily's relationship with her mother, no topic is too pleasant to avoid ",null,exp-adj
+6,,Neutral,"Given Lily's relationship with her mother, no topic is too current to avoid",null,exp-adj
+6,,Negative,"Given Lily's relationship with her mother, no topic too contentious  to avoid",null,exp-adj
+7,Elijah Doyle,Positive,"For someone like Alex, no memory is too pleasant to forget",null,exp-adj
+7,Elijah Doyle,Neutral,"For someone like Alex, no memory is too average to forget",null,exp-adj
+7,Elijah Doyle,Negative,"For someone like Alex, no memory is too embarrassing to forget",null,exp-adj
+8,Elijah Doyle,Positive,"With Liz's eating habits, no craving is too strong to resist",null,exp-adj
+8,Elijah Doyle,Neutral,"With Liz's eating habits, no craving is too normal to resist",null,exp-adj
+8,Elijah Doyle,Negative,"With Liz's eating habits, no craving is too weak to resist",null,exp-adj
+9,"Nuria ",Positive,No rumor is too credible to claim,null,exp-adj
+9,"Nuria ","Neutral ",No rumor is too impartial to claim,null,exp-adj
+9,"Nuria ",Negative,No rumor is too absurd to claim,null,exp-adj
+10,Jaclyn Desautels,Positive,"According to the politician, no social program is too efficient to oppose.",null,exp-adj
+10,Jaclyn Desautels,Neutral,"According to the politician, no social program is too public. ",null,exp-adj
+10,Jaclyn Desautels,"Negative ","According to the politician, no social program is too wasteful to oppose.",null,exp-adj
+11,Jaclyn Desautels,Positive,"In Sarah's opinion, some players are too fast to lose.",null,exp-adj
+11,Jaclyn Desautels,Neutral,"In Sarah's opinion, some players are too midwestern to lose. ",null,exp-adj
+11,Jaclyn Desautels,"Negative ","In Sarah's opinion, some players are too slow to lose.",null,exp-adj
+12,Jaclyn Desautels,Postive,"When Lulu is talking, some sentences are too simple to misunderstand.",null,exp-adj
+12,Jaclyn Desautels,Neutral,"When Lulu is talking, some sentences are too neutral to misunderstand. ",null,exp-adj
+12,Jaclyn Desautels,Negative,"When Lulu is talking, some sentences are too complex to misunderstand.",null,exp-adj
+13,Elijah Doyle,Postive,"For Alexander the great, no kingdom was too rich to conquer ",null,exp-adj
+13,Elijah Doyle,"Neutral ","For Alexander the great, no kingdom was too rich to conquer ",null,exp-adj
+13,Elijah Doyle,Negative,"For Alexander the great, no kingodm was too poor to conquer",null,exp-adj
+14,Elijah Doyle,Positive,"According to grandma, no polition is too genuine to dislike",null,exp-adj
+14,Elijah Doyle,Neutral,"According to grandma, no politition is too moderate to dislike",null,exp-adj
+14,Elijah Doyle,Negative,"According to grandma, no politition is too radical to dislike",null,exp-adj
+15,Elijah Doyle,Positive,"For Frank, no advice is too helpful to doubt",null,exp-adj
+15,Elijah Doyle,Neutral,"For Frank, no advice is too standard to doubt",null,exp-adj
+15,Elijah Doyle,Negative,"For Frank, no advice is too stupid to doubt",null,exp-adj
+16,Elijah Doyle,Positive,"When Sarah is talking, no sentence is too straightforward to misunderstand",null,exp-adj
+16,Elijah Doyle,Neutral,"When Sarah is talking, no sentence is too typical to misunderstand",null,exp-adj
+16,Elijah Doyle,Negative,"When Sarah is talking, no sentnece is too complicated to misunderstand",,exp-adj
