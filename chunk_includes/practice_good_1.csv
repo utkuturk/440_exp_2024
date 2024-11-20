@@ -1,2 +1,2 @@
-id,sentence,c2_type,c1_type,v2,comma,type,condition,grammaticality,Group,person
+id,sentence,condition2,condition1,v2,comma,type,condition,grammaticality,Group,writer
 502,"My favorite singer, who by the way is a high achieving young woman and very inspirational, is famous for revolutionizing country music.",practice,practice,practice,practice,practice,practice,1,practice,Utku

@@ -32,14 +32,10 @@ Header(
   newVar("itemnum").global(),
   newVar("trialN").global(),
   newVar("type").global(),
-  newVar("condition").global(),
+  newVar("condition1").global(),
+  newVar("condition2").global(),
   newVar("text").global(),
-  newVar("comma").global(),
-  newVar("v2").global(),
   newVar("person").global(),
-  newVar("c1").global(),
-  newVar("c2").global(),
-  newVar("grammatical").global(),
   newVar("RT").global(),
   newVar("Group").global()
 )
@@ -47,13 +43,10 @@ Header(
   .log("itemnum", getVar("itemnum"))
   .log("trialN", getVar("trialN"))
   .log("type", getVar("type"))
-  .log("condition", getVar("condition"))
+  .log("condition1", getVar("condition"))
+  .log("condition2", getVar("condition"))
   .log("text", getVar("text"))
-  .log("comma", getVar("comma"))
-  .log("v2", getVar("v2"))
   .log("person", getVar("person"))
-  .log("c1", getVar("c1"))
-  .log("c2", getVar("c2"))
   .log("RT", getVar("RT"))
   .log("Group", getVar("Group"));
 
@@ -62,12 +55,15 @@ const cross_time = 2000;
 const whitepage = 100;
 const header_font_size = "36";
 const body_font_size = "18";
-const fname_practice = "640_practice.csv";
-const fname_practice_first = "640_practice_first.csv";
+const fname_practice = "440_practice.csv";
+const fname_practice_first = "440_practice_first.csv";
 const fname_practice_bad = "practice_bad_1.csv";
 const fname_practice_good = "practice_good_1.csv";
-const fname_exp = "640_experimental.csv";
-const fname_filler = "640_filler.csv";
+const fname_exp_adj = "440_exp_adj.csv"
+const fname_exp_too = "440_exp_too.csv"
+const fname_exp_verb = "440_exp_verb.csv"
+const fname_exp_q = "440_exp_q.csv"
+const fname_filler = "440_filler.csv";
 
 // CSS Constants
 
@@ -513,16 +509,13 @@ var trial = (label) => (row) => {
     getVar("RT-answer").set((v) => Date.now() - v),
     getVar("itemnum").set(row.id),
     getVar("type").set(row.type),
-    getVar("condition").set(row.condition),
+    getVar("condition1").set(row.condition1),
+    getVar("condition2").set(row.condition2),
     getVar("text").set(row.sentence),
-    getVar("comma").set(row.comma),
-    getVar("v2").set(row.v2),
-    getVar("person").set(row.person),
-    getVar("c1").set(row.c1_type),
-    getVar("c2").set(row.c2_type),
-    getVar("Group").set(row.Group),
+    getVar("person").set(row.writer),
     getVar("RT").set(getVar("RT-answer")),
-    getVar("trialN").set(getVar("TrialN"))
+    getVar("trialN").set(getVar("TrialN")),
+    getVar("Group").set(row.Group)
   );
 };
 
