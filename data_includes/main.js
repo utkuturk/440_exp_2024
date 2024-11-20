@@ -7,8 +7,6 @@ const between_p_list = ["too", "adjective", "verb", "quantifier"];
 const between_p_condition = between_p_list[Math.floor(Math.random() * 4)];
 const between_p = between_p_list[between_p_condition];
 
-
-
 Sequence(
   "setcounter",
   "intro",
@@ -28,41 +26,48 @@ Sequence(
   "exit"
 );
 
+
 // Metadata
 Header(
   newVar("itemnum").global(),
   newVar("trialN").global(),
   newVar("type").global(),
-  newVar("condition1").global(),
-  newVar("condition2").global(),
+  newVar("condition").global(),
   newVar("text").global(),
+  newVar("comma").global(),
+  newVar("v2").global(),
   newVar("person").global(),
-  newVar("RT").global()
+  newVar("c1").global(),
+  newVar("c2").global(),
+  newVar("grammatical").global(),
+  newVar("RT").global(),
+  newVar("Group").global()
 )
   .log("PROLIFIC_ID", GetURLParameter("id"))
   .log("itemnum", getVar("itemnum"))
   .log("trialN", getVar("trialN"))
   .log("type", getVar("type"))
-  .log("condition1", getVar("condition"))
-  .log("condition2", getVar("condition"))
+  .log("condition", getVar("condition"))
   .log("text", getVar("text"))
+  .log("comma", getVar("comma"))
+  .log("v2", getVar("v2"))
   .log("person", getVar("person"))
-  .log("RT", getVar("RT"));
+  .log("c1", getVar("c1"))
+  .log("c2", getVar("c2"))
+  .log("RT", getVar("RT"))
+  .log("Group", getVar("Group"));
 
 // List of constants
 const cross_time = 2000;
 const whitepage = 100;
 const header_font_size = "36";
 const body_font_size = "18";
-const fname_practice = "440_practice.csv";
-const fname_practice_first = "440_practice_first.csv";
+const fname_practice = "640_practice.csv";
+const fname_practice_first = "640_practice_first.csv";
 const fname_practice_bad = "practice_bad_1.csv";
 const fname_practice_good = "practice_good_1.csv";
-const fname_exp_too = "440_exp_too.csv";
-const fname_exp_q = "440_exp_q.csv";
-const fname_exp_adj = "440_exp_adj.csv";
-const fname_exp_verb = "440_exp_verb.csv";
-const fname_filler = "440_filler.csv";
+const fname_exp = "640_experimental.csv";
+const fname_filler = "640_filler.csv";
 
 // CSS Constants
 
@@ -189,19 +194,22 @@ const newQ = () => [
     .callback(getTimer("hurry").stop())
     .log(),
   getTimer("hurry").wait(),
+  newTimer("feedback",500).start().wait(),
   // Make everything disappear
   getText("question").remove(),
   getScale("grade").remove(),
 ];
 // Dash
 const newDash = (text) => [
-  newController("DashedSentence", { s: text })
+  newController("DashedSentence", {s: text})
     .center()
     .print()
+    .css({"font-size": 24})
     .wait()
     .log()
     .remove(),
 ];
+
 
 // INTRO
 newTrial(
@@ -211,7 +219,7 @@ newTrial(
     "<center><b>Welcome!</b></center>" +
       "<p>Please read these instruction sections carefully! " +
       "If you fail to understand the task, your data will NOT be usable." +
-      "<p>In this experiment, you will be reading some sentences and judge them.." +
+      "<p>In this experiment, you will read some sentences and be asked to judge them for naturalness." +
       "<p>This experiment requires your FULL ATTENTION. " +
       "The experiment is reasonably brief. Most people find that the study takes around 30 minutes. " +
       "<p>Before proceeding please make sure:<ol>" +
@@ -237,9 +245,9 @@ newTrial(
   newText(
     "consent-body",
     "<center><b>Consent Form</b></center>" +
-      "<p>Please click <a target='_blank' rel='noopener noreferrer' href='https://utkuturk.com/files/web_consent.pdf'> here</a> to download the consent form for this study. If you read it and agree to participate in this study, click 'I Agree' below. If you do not agree to participate in this study, you can leave this study by closing the tab. You can leave the experiment at any time by closing the tab during the experiment. If you leave the experiment before completion of both parts, you will not be compensated for your time. If you encounter any problems, do not hesitate to reach us either via " +
-      // "Prolific or e-mail." +
-      "email. " +
+      "<p>Please click <a target='_blank' rel='noopener noreferrer' href='https://utkuturk.com/files/web_consent.pdf'> here</a> to download the consent form for this study. If you read it and agree to participate in this study, click 'I Agree' below. If you do not agree to participate in this study, you can leave this study by closing the tab. You can leave the experiment at any time by closing the tab during the experiment. If you leave the experiment before completion of both parts, you will not be compensated for your time. If you encounter any problems, do not hesitate to reach either of us  via " +
+      "Prolific or e-mail." +
+      // "email. " +
       "<br><br><b> Researchers:</b> <br>Utku Turk, PhD Student <i> (utkuturk@umd.edu)</i>,<br>Prof. Ellen Lau<br>University of Maryland, Department of Linguistics"
   ).css(body_css),
   newCanvas("consent-page", 1500, 500)
@@ -346,11 +354,11 @@ newTrial(
   newText(
     "instruction-text",
     "<center><b>Instructions</b></center><br>" +
-      "In this experiment, you will see sentences in the following fashion and judge them using your mouse or keyboard. Now, read the following sentence using the space bar to reveal words one by one  and rate how natural the sentence is to you by clicking a number from 1 to 7. You can also use your keyboard by pressing a number between 1 and 7. 1 means sentence is completely unnatural and not understandable. 7 means sentence is perfectly natural and understandable.<br><br><br>"
+      "In this experiment, you will use your keyboard to reveal sentences one word at a time by pressing space key. After you have read the sentence, you will be asked to judge it by using your mouse or keyboard to select a value on a scale from 1 to 7. 1 means you found the sentence completely unnatural and not understandable. 7 means the sentence is perfectly natural and understandable. Click 'See an Example' below to see how it works before you begin the experiment.<p><b>Please press the spacebar only after reading each word. Rapidly pressing the spacebar will result in your exclusion from the study and you will not be compensated.</b><br><br>"
   )
     .center()
     .css(body_css),
-  newCanvas("inst-page", 1500, 350)
+  newCanvas("inst-page", 1500, 450)
     .add(100, 20, newImage("umd_ling.png").size("60%", "auto"))
     .add(0, 120, getText("instruction-text"))
     .cssContainer(page_css)
@@ -366,7 +374,7 @@ newTrial(
   newQ(),
   newText(
     "inst-text-2",
-    "<br>Now, you will go through some practice items to get you used to the task. For every item, you will have 5 seconds to judge the sentence. If you do not judge the sentence in 5 seconds, the experiment will continue to the next item."
+    "<br>Now, you will go through some practice items to get you used to the task. For every item, you will have 5 seconds to judge the sentence. If you do not judge the sentence in 5 seconds, the experiment will continue to the next item. If you do not have enough sentences answered, your data will not be usable and you will be excluded."
   ).css(body_css),
   newCanvas("inst-page-2", 1500, 250)
     .add(100, 20, newImage("umd_ling.png").size("60%", "auto"))
@@ -385,7 +393,7 @@ newTrial(
   "practice_good",
   newText(
     "practice_good-body",
-    "That's all there is to it! Let's try some practice passages more like the ones you'll be seeing in the experiment. We would expect you to find the following passages GOOD."
+    "That's all there is to it! Let's try some practice sentences more like the ones you'll be seeing in the experiment. We would expect you to find the following sentences NATURAL (higher numbers on the scale)."
   ).css(body_css),
   newCanvas("start-page", 1500, 300)
     .add(100, 20, newImage("umd_ling.png").size("60%", "auto"))
@@ -397,12 +405,13 @@ newTrial(
   newTimer(300).start().wait()
 );
 
+
 newTrial(
   "practice_bad",
   newText(
     "practice_bad-body",
     "Some sentences, like the one you just read, are acceptable sentences in English." +
-      "<p>Try your hand at these next few sentences, which should be judged as BAD."
+      "<p>Try your hand at these next few sentences, which should be judged as UNNATURAL (lower numbers on the scale)."
   ).css(body_css),
   newCanvas("start-page", 1500, 300)
     .add(100, 20, newImage("umd_ling.png").size("60%", "auto"))
@@ -411,10 +420,11 @@ newTrial(
     .print(),
   newText("<p>").print(),
   newButton("CONTINUE").bold().css(button_css).print().wait(),
-  newTimer(300).start().wait(),
+  newTimer(300).start().wait()
   // The text above
-  newTimer(1000).start().wait()
 );
+
+
 
 newTrial(
   "practice_break",
@@ -429,10 +439,10 @@ newTrial(
     .print(),
   newText("<p>").print(),
   newButton("CONTINUE").bold().css(button_css).print().wait(),
-  newTimer(300).start().wait(),
+  newTimer(300).start().wait()
   // The text above
-  newTimer(1000).start().wait()
 );
+
 
 // Exp-Start
 newTrial(
@@ -440,9 +450,9 @@ newTrial(
   newText(
     "exp-start-body",
     "<center><b>Time to start the experiment!</b></center><br><br>" +
-      "<p>Before continuing, please double-check " +
+    "<p>Before continuing, please double-check " +
       "that you are in a quiet environment with minimal or no background noise." +
-      "<p>You can press any key to start the experiment."
+      "<p>You can press 'Continue'  to start the experiment."
   ).css(body_css),
   newCanvas("start-page", 1500, 300)
     .add(100, 20, newImage("umd_ling.png").size("60%", "auto"))
@@ -451,9 +461,8 @@ newTrial(
     .print(),
   newText("<p>").print(),
   newButton("CONTINUE").bold().css(button_css).print().wait(),
-  newTimer(300).start().wait(),
+  newTimer(300).start().wait()
   // The text above
-  newTimer(1000).start().wait()
 );
 
 // BREAK
@@ -473,10 +482,9 @@ SendResults("send_results");
 // EXIT
 newTrial(
   "exit",
-  newText(
-    "exit-text",
+  newText("exit-text",
     "<center><b>Thank you for participating in our study!</b></center><br><br>" +
-      "The experiment code is XXXXX  " +
+    "The experiment code is XXXXX  " +
       "Please paste this value into Prolific." +
       "<p>You can also confirm your participation on Prolific by clicking the link below: " +
       "<a href='https://app.prolific.com/submissions/complete?cc=XXXXX'>Confirm your participation.</a>" +
@@ -505,14 +513,20 @@ var trial = (label) => (row) => {
     getVar("RT-answer").set((v) => Date.now() - v),
     getVar("itemnum").set(row.id),
     getVar("type").set(row.type),
-    getVar("condition1").set(row.condition1),
-    getVar("condition2").set(row.condition2),
+    getVar("condition").set(row.condition),
     getVar("text").set(row.sentence),
-    getVar("person").set(row.writer),
+    getVar("comma").set(row.comma),
+    getVar("v2").set(row.v2),
+    getVar("person").set(row.person),
+    getVar("c1").set(row.c1_type),
+    getVar("c2").set(row.c2_type),
+    getVar("Group").set(row.Group),
     getVar("RT").set(getVar("RT-answer")),
     getVar("trialN").set(getVar("TrialN"))
   );
 };
+
+
 
 Template(GetTable(fname_practice_first), trial("practice_first"));
 Template(GetTable(fname_practice_good), trial("practice_good_item"));
